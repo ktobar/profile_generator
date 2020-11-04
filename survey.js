@@ -8,8 +8,8 @@ const rl = readline.createInterface({
 let pulledAnswers = [];
 
 const showAnswers = (answers) => {
-  console.log(`${answers[0]} loves listening to ${answers[2]} while ${answers[1]}, devouring ${answers[4]} for ${answers[3]}, prefers ${answers[5]} over any other sport, and is amazing at ${answers[6]}.`)
-}
+  console.log(`${answers[0]} loves listening to ${answers[2]} while ${answers[1]}, devouring ${answers[4]} for ${answers[3]}, prefers ${answers[5]} over any other sport, and is amazing at ${answers[6]}.`);
+};
 
 rl.question(`What's your name? Nicknames are also acceptable `, (answer1) => {
   pulledAnswers.push(answer1);
@@ -33,7 +33,7 @@ rl.question(`What's your name? Nicknames are also acceptable `, (answer1) => {
               pulledAnswers.push(answer6);
               
               rl.close();
-              showAnswers(pulledAnswers)
+              showAnswers(pulledAnswers);
             });
           });
         });
